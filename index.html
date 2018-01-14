@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Cratestack &mdash; Craig Horwood</title>
+<script type="text/javascript" src="cratestack.js"></script>
+</head>
+<body style="text-align: center;">
+<h1>Cratestack</h1>
+<canvas id="game_canvas" width="640" height="640" oncontextmenu="return false;">
+Your browser does not seem to support the <code>&lt;canvas&gt;</code> element.
+</canvas>
+<div id="controls" style="display: none; text-align: center;">
+WASD to move.<br />
+Spacebar to jump.<br />
+Click mouse to shoot.<br />
+R to restart.
+</div>
+<div id="level_editor" style="display: none; text-align: center;">
+<p>Use mouse wheel to place different block types.<br />Right click to erase.</p>
+<input type="button" value="Set starting position" onclick="setPlayerPosition()" />
+<input type="button" value="Set goal position" onclick="setGoalPosition()" /><br /><br />
+<b>Level code:</b> <input type="form" id="levelCode" style="width: 240px" />
+<input type="button" value="Load" onclick="loadLevelButton()" />
+<input type="button" value="Play" onclick="playLevel()" /><br />
+<div id="error" style="display: none;">
+<b>Level code must be four or more characters long.</b>
+</div>
+</div>
+</body>
+</html>
